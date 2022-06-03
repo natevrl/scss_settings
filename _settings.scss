@@ -1,0 +1,62 @@
+
+// color theme 1
+$color1-woodgreen: #809A6F;
+$color2-red: #A25B5B;
+$color3-orange: #CC9C75;
+$color4-flatgreen: #D5D8B5;
+
+// classic background color
+$black: rgb(5, 5, 5);
+$near-black: rgb(17, 17, 17);
+$near-white: rgb(250, 250, 250);
+$dark-grey: rgb(42, 42, 42);
+
+
+// MIXINS : Call CSS block in one line, with parameters like a functions
+// -----> @include absolute-element to call the mixins
+
+//handle the position + setup an absolute absolute or fixed element
+@mixin absolute-element ($top, $right, $bottom, $left, $x, $y, $fix-or-abs) {
+	position: $fix-or-abs;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+	transform: ($x, $y);
+}
+
+// PLACEHOLDERS : Stock a block of code in one variable 
+//	---> @extend %flex-center to call the placeholder 
+
+// Fast center an element
+%flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+%absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	cursor: pointer;
+  }
+  
+  li {
+	list-style-type: none;
+  }
+  
+  a {
+	text-decoration: none;
+	cursor: pointer;
+  }
