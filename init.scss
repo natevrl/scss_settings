@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+	font-family: Raleway, sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
+	background: #1b1523;
+	color: #fff;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	cursor: pointer;
+  }
+  
+  li {
+	list-style-type: none;
+  }
+  
+  a {
+	text-decoration: none;
+	cursor: pointer;
+  }
